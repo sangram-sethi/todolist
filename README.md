@@ -42,5 +42,5 @@ The application follows a component-based architecture:
 
 3. Run the application:
 
-  ```bash
-  npm start
+   ```bash
+   npm start
