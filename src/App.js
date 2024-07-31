@@ -1,5 +1,3 @@
-// src/App.js
-
 import React, { useState, useEffect } from "react";
 import TaskList from "./components/TaskList";
 import TaskForm from "./components/TaskForm";
@@ -11,7 +9,6 @@ const App = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
-    // Fetch tasks from the JSON file
     const fetchTasks = async () => {
       try {
         const response = await fetch("/data.json");
@@ -35,7 +32,6 @@ const App = () => {
   };
 
   const handleSearch = (query) => {
-    // Use setSearchQuery to update the state, instead of calling searchQuery as a function
     setSearchQuery(query);
   };
 
