@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import TaskList from "./components/TaskList";
 import TaskForm from "./components/TaskForm";
 import SearchBar from "./components/SearchBar";
+import SuprSendInboxComponent from './SuprSendInboxComponent';
 import './styles.css';
 
 const App = () => {
@@ -45,6 +46,7 @@ const App = () => {
       <SearchBar onSearch={handleSearch} />
       <TaskForm addTask={addTask} />
       <TaskList tasks={filteredTasks} updateTask={updateTask} />
+      <SuprSendInboxComponent />
     </div>
   );
 };
